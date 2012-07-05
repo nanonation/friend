@@ -53,7 +53,7 @@
                    {::friend/workflow :http-basic
                     ::friend/redirect-on-auth? false})
         (http-basic-deny realm request))
-      {:status 400 :body "Malformed Authorization header for HTTP Basic authentication."}))))
+      (http-basic-deny realm request)))))
 
 (defn interactive-login-redirect
   [{:keys [params] :as request}]

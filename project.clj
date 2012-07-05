@@ -1,5 +1,5 @@
-(defproject com.cemerick/friend "0.0.9"
-  :description "Authentication and authorization library for Ring Clojure web apps and services."
+(defproject net.nanonation/friend "0.0.10"
+  :description "Authentication and authorization library for Ring Clojure web apps and services. Forked from com.cemerick/friend"
   :url "http://github.com/cemerick/friend"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -19,7 +19,7 @@
                  [net.sourceforge.nekohtml/nekohtml "1.9.10"]
                  ; need different httpclient rev for https://issues.apache.org/jira/browse/HTTPCLIENT-1118
                  [org.apache.httpcomponents/httpclient "4.2-beta1"]]
-  
+
   :profiles {:dev {:dependencies [[ring-mock "0.1.1"]
                                   [compojure "1.0.1"]
                                   [ring "1.0.2"]
